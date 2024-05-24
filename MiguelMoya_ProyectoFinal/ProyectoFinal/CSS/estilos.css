@@ -1,0 +1,513 @@
+/* General y barra de navegación */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b2838;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #000d22;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+h2 {
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo img,
+.perfil img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.perfil {
+
+    margin-left: -20%;
+}
+
+.perfil img {
+    vertical-align: middle;
+}
+
+.perfil p {
+    display: inline-block;
+    translate: 0 5px;
+
+}
+
+p,
+h1,
+h2 {
+    color: #e8d6db;
+    transition: 0.35s;
+}
+
+
+.perfil p {
+    text-align: center;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0px 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #e8d6db;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.35s;
+}
+
+.menu a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.perfil {
+    transition: 0.5s;
+}
+
+.perfil:hover {
+    background-color: gray;
+}
+
+
+
+/*Contenido*/
+
+
+/*Productos*/
+input[type="radio"] {
+    position: relative;
+}
+
+.productosDestacados {
+
+    display: flex;
+}
+
+
+.productoDestacado {
+
+    position: absolute;
+    border: 2px solid black;
+    color: #e8d6db;
+    background-color: #101e2b;
+
+    transition: 0.25s;
+    left: 38%;
+    text-align: center;
+
+
+}
+
+.productoDestacado img,
+.productoDestacado p {
+    opacity: 0;
+}
+
+.boton_destacado {
+    transform: translateX(100px);
+    transform: translateY(315px);
+}
+
+#radio_0 {
+    z-index: 1;
+    margin-left: 855px;
+}
+
+#radio_1 {
+    margin-left: 45px;
+    z-index: 1;
+}
+
+#radio_2 {
+    margin-left: 45px;
+    z-index: 1;
+}
+
+#radio_3 {
+    margin-left: 45px;
+    z-index: 1;
+}
+
+
+
+
+
+.productos {
+    border: 2px solid #e8d6db;
+    display: flex;
+    overflow-x: auto;
+}
+
+.producto {
+    border: 2px solid black;
+    margin: 0px 65px;
+    color: #e8d6db;
+    background-color: #3d7190;
+    text-align: center;
+    transition: 0.25s;
+}
+
+
+.producto:hover {
+    background-color: #4d87a8;
+}
+
+.productosR {
+    display: flex;
+    animation: slider 12s infinite linear;
+
+}
+
+.productoR {
+    position: relative;
+
+    border: 2px solid black;
+    margin: 0px 65px;
+    color: #e8d6db;
+    background-color: #3d7190;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.productoR:hover {
+    background-color: #4d87a8;
+}
+
+.productosGenero {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Perfil*/
+
+.perfilPagina {
+    display: flex;
+    width: 25%;
+    height: 50%;
+    border: 2px solid black;
+    background-color: gray;
+    margin-left: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.datosUsuario {
+
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.datosUsuario img {
+    width: 125px;
+}
+
+.infoUsuario {
+
+    width: 50%;
+    height: 100%;
+}
+
+.infoUsuario a {
+    width: 100%;
+    margin-top: 4%;
+    border: 2px solid black
+}
+
+/*Galeria de jeugos*/
+
+.contenidoMostrado {
+    display: flex;
+}
+
+.contenidoMostrado-elementos {
+    width: 600px;
+    height: 377px;
+    margin-top: 8%;
+    margin-left: 26%;
+
+}
+
+.contenidoMostrado-portada {
+    margin-top: 9%;
+    margin-left: 2%;
+    background-color: #1e232e;
+    width: fit-content;
+}
+
+.contenidoMostrado-portada img {
+    width: 368px;
+    height: 172px;
+}
+
+.contenidoMostrado-portada p {
+    width: 368px;
+}
+
+.contenidoMostrado-elementos img,
+.contenidoMostrado-elementos video {
+    width: 100%;
+    height: 100%;
+
+}
+
+.galeriaJuego {
+    display: flex;
+}
+
+.refVisual_juego {
+    margin-top: 8%;
+    margin-left: 25%;
+
+}
+
+.botones_juego {
+    border: 2px solid #e8d6db;
+    display: flex;
+    overflow-x: auto;
+    margin-left: 26%;
+    width: 596px;
+    height: auto;
+}
+
+.boton_juego img,
+.boton_juego video {
+    width: 150px;
+    height: 94px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    max-width: 40%;
+    max-height: 60%;
+}
+
+.comprar {
+    min-width: 596px;
+    max-width: 596px;
+    min-height: 100px;
+    max-height: 100px;
+    margin-left: 26%;
+    margin-top: 2%;
+    background-color: #495866;
+    border-radius: 5px;
+}
+
+.comprar p {
+    font-size: 20px;
+    transform: translate(25px, 40px);
+}
+
+.comprarPrecio {
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    border-radius: 5px;
+    margin-left: 28%;
+    transform: translate(180px, 0px);
+}
+
+.comprarPrecio p {
+    font-size: 17px;
+    transform: translate(7px, 15px);
+}
+
+.comprarPrecioBoton {
+    width: 125px;
+    height: 42px;
+    background-color: #74af21;
+    border-radius: 5px;
+
+    transform: translate(71px, -33px);
+    transition: background-color 0.25s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(228, 228, 228);
+
+}
+
+.comprarPrecioBoton:hover {
+    background-color: #89ca2e;
+    color: white;
+
+}
+
+.confirmarCompra {
+    width: 550px;
+    height: 150px;
+    background-color: lightgray;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    margin-top: -25%;
+    margin-left: 25%;
+
+}
+
+.opcionesConfirmarCompra {
+    display: flex;
+    margin-left: 50%;
+
+}
+
+.botonOpcionConfirmarCompra {
+    width: 100px;
+    height: 35px;
+    background-color: #74af21;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 10px;
+    color: rgb(228, 228, 228);
+    transition: 0.25;
+
+}
+
+.botonOpcionConfirmarCompra:hover {
+    background-color: #89ca2e;
+    color: white;
+}
+
+
+
+.confirmarCompra:target {
+    display: block;
+}
+
+.fondoNegro {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    width: 100vw;
+    height: 100vW;
+    margin-top: -80%;
+    margin-left: -90%;
+}
+
+
+/*Pie de pagina*/
+.pie {
+    background-color: #171a21;
+    width: 100%;
+    height: 100px;
+
+    text-align: center;
+    margin-top: 38%;
+}
+
+.pie a {
+    margin-left: 5%;
+    color: white;
+    margin-right: 5%;
+
+}
+
+
+
+@keyframes slider {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-125%);
+    }
+}
+
+
+@media only screen and (max-width: 780px) {
+    body {
+        display: flex;
+
+    }
+
+    header {
+        flex-direction: column;
+        width: 20%;
+        height: 100vh;
+
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil {
+        order: -1;
+        align-self: flex-start;
+        margin-bottom: 10px;
+    }
+
+    header {
+        background-color: #000d22;
+        padding: 10px 20px;
+        display: inline-block;
+        justify-content: space-between;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    li {
+        padding-top: 15%;
+    }
+
+    .contenido {
+        margin-top: 0px;
+    }
+
+
+
+
+
+}

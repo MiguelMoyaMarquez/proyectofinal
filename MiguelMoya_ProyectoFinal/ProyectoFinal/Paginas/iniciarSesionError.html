@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicar Sesion</title>
+    <link rel="stylesheet" href="../CSS/sesion.css">
+</head>
+
+<body>
+    <div class="sesion">
+        <img src='../Imagenes/logo.png' alt='Logotipo'>
+        <h1>Inicar Sesion</h1>
+        <p style="color:red">*El correo o la contraseña son incorrectos*</p>
+        <h2>Correo</h2>
+        <form action="proceso_perfil.php?operacion=iniciar" method="post">
+            <input type="email" name="correo">
+            <h2>contraseña</h2>
+            <input type="password" name="pass">
+            <p><a href="crearCuenta.html">Crear Cuenta</a></p>
+            <button>Inicar Sesión</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
